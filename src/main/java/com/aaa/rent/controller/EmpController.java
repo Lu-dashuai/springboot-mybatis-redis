@@ -1,13 +1,20 @@
 package com.aaa.rent.controller;
 
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
 /**
  * className:EmpController
  * discription:
  * author:luRuiHua
  * createTime:2018-11-29 09:34
  */
+@RestController
 public class EmpController {
-    public static void main(String[] args) {
-        System.out.println("测试git");
+
+    @RequestMapping("/hello")
+    public Object getList() {
+        return "hello world!";
     }
+
 }
